@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Agregar tarea"
+             x:Class="ToDo.Droid.Resources.views.AddPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="Btnguardar" Text="Guardar" Clicked="Btnguardar_Clicked" />
+
+
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout Padding="15">
+            <Label Text="Nombre" 
+                   FontSize="Medium"
+                   TextColor="{StaticResource colorPrimaryDark}"></Label>
+            <Entry x:Name="nombre"></Entry>
+            <Label Text="Descripción"
+                   FontSize="Medium"
+                   TextColor="{StaticResource colorAccent}"></Label>
+            <Editor x:Name="descripcion" HeightRequest="200"></Editor>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
